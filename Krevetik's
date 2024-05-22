@@ -1,0 +1,12 @@
+// C Program to Count the Number // Of Digits in a Number // Using Logarithmic Approach
+#include <math.h>
+#include <stdio.h>
+
+// Driver code
+int main() {
+    int n = 98562;
+    int count = 0;
+    count = (n == 0) ? 1 : log10(n) + 1;
+    printf("Count of digits in %d = %d\n", n, count);
+    return 0;
+}
